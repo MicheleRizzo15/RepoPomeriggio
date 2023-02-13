@@ -3,22 +3,21 @@
 int main(int argc, char *argv[])
 {
 
-	int a, b;
-	double r;
+	double n1, n2, risultato;
 
 	do
 	{
 		printf("n1\n");
-		scanf("%d", &a);
+		scanf("%f", &n1);
 		printf("n2\n");
-		scanf("%d", &b);
+		scanf("%f", &n1);
 
-		if (a > b)
-			r = (double)b / (double)a;
+		if (n1 > n2)
+			risultato = n2/n1;
 		else
-			r = (double)a / (double)b;
-		printf("\nIl prodotto è: %f\n", r);
-	} while (a != 0 && b != 0);
+			risultato = n1/n2;
+		printf("\nIl prodotto è: %f\n", risultato);
+	} while (n1 != 0 && n2 != 0);
 
 	return 0;
 }
